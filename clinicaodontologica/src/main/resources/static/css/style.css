@@ -1,0 +1,267 @@
+@import url('./globalStyle.css');
+
+body {
+    background-image: url('../assets/Consultorio.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* capa sobre fondo */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .6);
+
+}
+
+header {
+    background-color: var(--negro);
+    height: 5rem;
+    margin-bottom: 3rem;
+}
+
+nav {
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-weight: 300;
+    margin-left: 0px;
+}
+
+nav span{
+    text-align: center;
+    font-weight: 300;
+    margin-left: -120px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--oscuro);
+    font-weight: 600;
+}
+
+nav img {
+    display: block;
+    height: 80%;
+}
+
+nav .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .user-info .user-image {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50vh;
+    margin-left: .5rem;
+}
+
+nav .user-info a {
+    background-color: var(--laranja);
+    color: white;
+    padding: .5rem 1rem;
+    margin-left: 2rem;
+    border-radius: .3rem;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+
+.center{
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    background-color: var(--negro);    
+    max-width: 20rem;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 2rem 3rem;
+    border-radius: .8rem;
+}
+
+.center h3{    
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.center p{
+    margin: 8px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.container {
+    padding: 0 5%;
+}
+
+form {
+    background-color: var(--negro);
+    max-width: 20rem;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .8rem;
+}
+
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-header h2 {
+    margin-bottom: .8rem;
+}
+
+.form-header p {
+    background-color: var(--lila);
+    padding: .2rem 1rem;
+}
+
+form label {
+    margin-bottom: .3rem;
+}
+
+form a {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--lila)
+}
+
+form input {
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+    padding: .3rem 1rem;
+    border: 2px solid var(--app-grey);
+}
+
+form select {
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+    padding: .3rem 1rem;
+    border: 2px solid var(--app-grey);
+}
+
+
+form input:focus {
+    outline: none;
+    border: 2px solid var(--lila);
+}
+
+form button{
+    background-color: var(--azul);
+    color: white;
+    padding: .8rem 0;
+    border-radius: .3rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+form button:hover{
+    background-color: var(--azul-hover);
+}
+
+.ingresarA {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.ingresarA a {
+    color: var(--lila);
+}
+.ingresarA a:hover{
+    color: var(--azul);
+}
+
+
+
+.tabla{
+    margin-top: 10px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.divTabla{
+    background-color: var(--negro);
+    width: 70%;
+    min-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: .3rem;
+}
+
+table,thead, th, tbody, td{
+    text-align: center;
+    padding: .2rem .3rem;
+
+}
+
+.eliminar {
+    background-color: var(--laranja);
+    color: white;
+    padding: .2rem .2rem;
+    margin-left: 2rem;
+    border-radius: .3rem;
+}
+
+.modificar{
+    background-color: var(--verde);
+    color: white;
+    padding: .2rem .2rem;
+    margin-left: 2rem;
+    border-radius: .3rem;
+}
+
+.containerModificar{
+    display:none;
+    
+}
+
+.containerActive{
+    display:active;
+}
+
+
+/* Esta clase oculta el formulario */
+.hidden {
+    display: none;
+}
+
+.buttonContainer{
+    width: 70%;
+    margin: auto;
+}
+.homeButtonContainer{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: .5rem;
+
+}
+
+.homeButton{
+    background-color: var(--azul);
+    width: 150px;
+    color: white;
+    padding: 8px;
+    border-radius: .3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+
+}

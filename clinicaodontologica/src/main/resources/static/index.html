@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinica Odontologica</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="./css/style.css">
+ 
+</head>
+
+<body>
+
+
+<header class="container">
+    <nav>
+      <h1 class="home">| Clinica Odontologica |</h1>
+      <span>Back End I y II</span>
+        <div class="user-info">          
+           <a id="closeApp" href="/logout" th:href="@{/logout}"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+        </div>
+    </nav>
+   
+</header>
+
+
+<main class="container">
+  <div class="center">
+    <h3>Bienvenido</h3>
+    <p>Horario de atención</p>
+    <p>De 8:00 a 18:00 hs</p>
+    <p>Telefono</p>
+    <p>1234-5678</p>
+  </div>
+  
+  <div class="buttonContainer">
+    <div class="homeButtonContainer">
+      <a href="crearOdontologo.html"class="homeButton">Crear Odontologo</a>
+      <a href="crearPaciente.html"class="homeButton">Crear Paciente</a>
+      <a href="crearTurno.html"class="homeButton">Crear Turno</a>
+    </div>
+    
+    <div class="homeButtonContainer">
+      <a href="administrarOdontologo.html"class="homeButton" id="listaOdontologos">Listar Odontologos</a>
+      <a href="administrarPaciente.html"class="homeButton" id="listaPacientes">Listar Pacientes</a>
+      <a href="administrarTurno.html"class="homeButton"id="listaTurnos">Listar Turnos</a>
+    </div>
+  </div>
+
+
+   
+</main>
+
+</body>
+
+</html>

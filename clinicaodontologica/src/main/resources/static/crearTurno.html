@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinica Odontologica</title>
+  <link rel="icon" type="image/x-icon" href="./assets/DH_Logo_Black.png">
+  <meta name="description" content="Digital House CTD | Proyecto integrador | FRONTEND II"/>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="scripts/crearTurno.js"></script>
+
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <h1>| Clinica Odontologica | </h1>
+      <a href="./index.html">volver</a>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <form>
+      <div class="form-header">
+        <h2>Registrar Turno</h2>
+      </div>     
+      <select name="odontologos" id="odontologos">
+        <option value="0">Seleccione un Odontologo</option>
+      </select>
+      <a href="./crearOdontologo.html">Registar Odontologo</a>
+      
+      <select name="paciente" id="paciente">
+        <option value="0">Seleccione un Paciente</option>
+      </select>
+      <a href="./crearPaciente.html">Registar Paciente</a>
+
+      <label for="turno">Seleccione el día:</label>
+      <input type="date" id="fechaTurno"  value="2022-07-11">
+
+      <label for="hora">Seleccione la hora:</label>
+      <input type="time" id="horaTurno" value="08:00" min="08:00" max="18:00" step="1800">
+
+      
+
+      <button type="submit">Confirmar Turno</button>
+      <div class="mensaje"></div>
+    </form>
+
+    
+  </div>
+
+</body>
+
+</html>

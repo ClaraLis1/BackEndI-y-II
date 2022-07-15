@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinica Odontologica</title>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="scripts/modificarPaciente.js"></script>
+  
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <h1>| Clinica Odontologica | </h1>
+      <a href="./index.html">volver</a>
+    </nav>
+  </header>
+
+  <div class="divTabla">
+    <table class="tabla" id="tablaListado">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+          </tr>
+          </thead>
+                <tbody id="bodyTablaListado">
+          </tbody>
+          </table>
+  </div>
+
+  <div class="containerModificar" id="containerForm">
+    <form>
+      <div class="form-header">
+        <h2>Modificar Paciente</h2>         
+      </div>
+      
+      <label>ID</label>
+      <input type="number" id="inputId" placeholder="id a modificar" required>
+
+      <label>Nombre</label>
+      <input id="inputNombre" type="text"required>
+
+      <label>Apellido</label>
+      <input id="inputApellido" type="text"required>
+
+      <label>DNI</label>
+      <input id="inputDni" type="text"required>
+
+      
+      <label>Calle</label>
+      <input id="inputCalle" type="text"required>
+      <label>Numero</label>
+      <input id="inputNumero" type="number"required>
+      <label>Localidad</label>
+      <input id="inputLocalidad" type="text"required>
+      <label>Provincia</label>
+      <input id="inputProvincia" type="text"required>
+
+      <button type="submit">Modificar Paciente</button>
+      <div class="mensaje"></div>
+    </form>
+
+    
+  </div>
+
+</body>
+
+</html>
